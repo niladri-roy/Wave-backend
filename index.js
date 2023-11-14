@@ -16,8 +16,6 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
   })
   .then(() => {
     console.log("DB Connection Successful");
